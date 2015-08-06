@@ -6,6 +6,7 @@
 </head>
 
 <body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </body>
 
 <template name="applicationLayout">
@@ -68,13 +69,19 @@
       <p>For some of the region's best produce, head back toward town, then west on I-395; cross the rickety metal bridge, and follow signs for State Route 20. After a few miles, the signs for Peachcrest Fruitbasket Organic Farm will appear. As the name suggests, this spot is all about peaches: juicy white and yellow peaches the size of softballs. Buy them by the pound, and be sure to buy some extras for the ride along SR 20 and Highway 2 back to Spokane.</p>
     </div>
   </div>
-  <div class="content-item">
+  <div class="content-item js-editable-content-container">
     <div class="content-item--editable-content {{textClass}}" contentEditable="true">
       Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.
     </div>
     {{#if contentItemFocused}}
-      <div>
-        <button class="button save-button">Save</button>
+      <div class="toolbar">
+        <div class="toolbar--item">Quote</div>
+        <div class="toolbar--item">Size picker</div>
+        <div class="toolbar--item">Backgroung color picker</div>
+        <div class="toolbar--item"><i class="fa fa-font"></i></div>
+        <div class="toolbar--item">
+          <button class="button save-button">Done</button>
+        </div>
       </div>
     {{/if}}
   </div>
