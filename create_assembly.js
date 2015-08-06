@@ -13,11 +13,11 @@ if (Meteor.isClient) {
         createdAt: new Date()
       });
 
-      Router.go("/admin/assemblies/" + id);
+      Router.go("/assemblies/" + id);
     }
   });
 
-  Template.editAssembly.events({
+  Template.viewAssembly.events({
     "focusout #edit-assembly": function (event) {
     }
   });
