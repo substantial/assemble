@@ -5,17 +5,11 @@
 <body>
   {{> navigation}}
   <main>
-  {{> hello}}
   {{# if currentUser}}
     <a href="/admin/assemblies/new" >New Assembly</a>
   {{/if}}
   </main>
 </body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
 
 <template name="newAssembly">
   <form id="new-assembly">
