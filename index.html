@@ -6,7 +6,7 @@
   {{> navigation}}
   <main>
   {{# if currentUser}}
-    <a href="/admin/assemblies/new" >New Assembly</a>
+    <a href="/admin/assemblies/new">New Assembly</a>
   {{/if}}
   </main>
 </body>
@@ -14,7 +14,7 @@
 <template name="newAssembly">
   <form id="new-assembly">
     <input type="text" name="assemblyTitle" value="Untitled" />
-    <input type="submit" name="submit" value="Create Assembly" />
+    <input class="button" type="submit" name="submit" value="Create Assembly" />
   </form>
 </template>
 
