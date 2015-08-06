@@ -8,7 +8,6 @@ Template.viewAssembly.events({
     Session.set("isContentItemFocused", true);
   },
   "focusout #edit-assembly .js-editable-content-container": function (event) {
-    $(event.currentTarget).toggleClass('content-item--editing');
     updateTextStyle(event);
   },
   "click .save-button": function (event) {
@@ -28,6 +27,9 @@ Template.viewAssembly.helpers({
 
 var updateTextStyle = function(event) {
   var text = event.target.textContent;
+
+  $(event.currentTarget).toggleClass('content-item--editing');
+
   if(text.length > 200) {
     Session.set("textClass", "");
   }
