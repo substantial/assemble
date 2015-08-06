@@ -3,12 +3,13 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-  {{> loginButtons}}
+  {{> navigation}}
+  <main>
   {{> hello}}
   {{# if currentUser}}
     <a href="/admin/assemblies/new" >New Assembly</a>
   {{/if}}
+  </main>
 </body>
 
 <template name="hello">
