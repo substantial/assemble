@@ -26,11 +26,23 @@
   </form>
 </template>
 
-<template name="assembly">
+<template name="editAssembly">
   <h1>{{ title }}</h1>
   {{#if isPublic}}
     <p>Public</p>
   {{else}}
     <p>Private</p>
   {{/if}}
+
+  <div class="content">
+    <div class="content-item">
+      Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.
+    </div>
+    <div class="content-item">
+      <img src="http://fillmurray.com/200/300" alt="Bill" />
+    </div>
+    <div class="content-item">
+      placeholder for map
+    </div>
+  </div>
 </template>

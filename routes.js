@@ -6,7 +6,7 @@ Router.route('/admin/assemblies/new', function () {
 });
 
 Router.route('/admin/assemblies/:id', function () {
-  this.render('assembly', {
+  this.render('editAssembly', {
     data: function() {
       return Assemblies.findOne({_id: this.params.id});
     }
