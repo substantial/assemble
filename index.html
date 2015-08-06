@@ -40,9 +40,14 @@
     <p>Private</p>
   {{/if}}
 
-  <div class="content">
-    <div class="content-item">
+  <div class="content" id="edit-assembly">
+    <div class="content-item" contentEditable="true">
       Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.
+      {{#if contentItemFocused}}
+        <div>
+          <button class="button">Save</button>
+        </div>
+      {{/if}}
     </div>
     <div class="content-item">
       <img src="http://fillmurray.com/200/300" alt="Bill" />
