@@ -16,9 +16,4 @@ if (Meteor.isClient) {
       Router.go("/assemblies/" + id);
     }
   });
-
-  Template.viewAssembly.events({
-    "focusout #edit-assembly": function (event) {
-    }
-  });
 }
