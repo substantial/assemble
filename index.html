@@ -61,39 +61,40 @@
     <div class="content-item">
       <iframe width='100%' height='300px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/ryanmack.n3n9k4ck/attribution.html?access_token=pk.eyJ1Ijoicnlhbm1hY2siLCJhIjoiOWRBd0R2USJ9.KUq-k8Sp25DnjpHZS9_oXw'></iframe>
     </div>
-  </div>
-  <div class="content-item content-item--bleed content-item--background-image">
-    <div class="content-item__body-text">
-      <p>Start the drive in downtown Spokane, and head north along I-395 past rolling hills made verdant from the waters of the Columbia River. Fruit trees begin to dot the landscape after Colville, and in Kettle Falls, the community seems to come to life. This is the de facto capital of the region, and Meyers Falls Market, the local grocery store/taqueria/wine bar, is the de facto local community center. It also happens to be a great place to grab a sack lunch.</p>
-      <p>From the market, turn right (north) on State Route 25. Riverview Orchard, the first major farm stand, specializes in (you-pick) nectarines and pears, but also sells local honey. Owners John and Janet Crandall roast their own coffee as well. Next, check out Cliffside Orchard, which sits on a cliff overlooking the river and Lake Roosevelt. This spot is all about fresh cherries -- 3-lb. bags sell for less than $10. The fruit is as sweet as candy.</p>
-      <p>For some of the region's best produce, head back toward town, then west on I-395; cross the rickety metal bridge, and follow signs for State Route 20. After a few miles, the signs for Peachcrest Fruitbasket Organic Farm will appear. As the name suggests, this spot is all about peaches: juicy white and yellow peaches the size of softballs. Buy them by the pound, and be sure to buy some extras for the ride along SR 20 and Highway 2 back to Spokane.</p>
-    </div>
-  </div>
-  <div class="content-item js-editable-content-container">
-    <div class="content-item--editable-content {{textClass}}" contentEditable="true">
-      Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.
-    </div>
-    {{#if contentItemFocused}}
-      <div class="toolbar">
-        <div class="toolbar--item">
-          {{#dropdownTrigger name="textDropDown"}}
-            <button class="blank-button">
-              Text Type
-              <i class="fa fa-angle-down"></i>
-            </button>
-          {{/dropdownTrigger}}
-          {{#dropdown name="textDropDown"}}
-            <p>Quote</p>
-            <p>Paragraph</p>
-          {{/dropdown}}
-        </div>
-        <div class="toolbar--item">Size picker</div>
-        <div class="toolbar--item">Bg color picker</div>
-        <div class="toolbar--item"><i class="fa fa-font"></i></div>
-        <div class="toolbar--item">
-          <button class="button expanding-button">Done</button>
-        </div>
+    <div class="content-item content-item--bleed">
+      <div class="content-item__body-text">
+        <h3>Getting There</h3>
+        <p>Start the drive in downtown Spokane, and head north along I-395 past rolling hills made verdant from the waters of the Columbia River. Fruit trees begin to dot the landscape after Colville, and in Kettle Falls, the community seems to come to life. This is the de facto capital of the region, and Meyers Falls Market, the local grocery store/taqueria/wine bar, is the de facto local community center. It also happens to be a great place to grab a sack lunch.</p>
+        <p>From the market, turn right (north) on State Route 25. Riverview Orchard, the first major farm stand, specializes in (you-pick) nectarines and pears, but also sells local honey. Owners John and Janet Crandall roast their own coffee as well. Next, check out Cliffside Orchard, which sits on a cliff overlooking the river and Lake Roosevelt. This spot is all about fresh cherries -- 3-lb. bags sell for less than $10. The fruit is as sweet as candy.</p>
+        <p>For some of the region's best produce, head back toward town, then west on I-395; cross the rickety metal bridge, and follow signs for State Route 20. After a few miles, the signs for Peachcrest Fruitbasket Organic Farm will appear. As the name suggests, this spot is all about peaches: juicy white and yellow peaches the size of softballs. Buy them by the pound, and be sure to buy some extras for the ride along SR 20 and Highway 2 back to Spokane.</p>
       </div>
-    {{/if}}
+    </div>
+    <div class="content-item js-editable-content-container">
+      <div class="content-item--editable-content {{textClass}}" contentEditable="true">
+        Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.
+      </div>
+      {{#if contentItemFocused}}
+        <div class="toolbar">
+          <div class="toolbar--item">
+            {{#dropdownTrigger name="textDropDown"}}
+              <button class="blank-button">
+                Text Type
+                <i class="fa fa-angle-down"></i>
+              </button>
+            {{/dropdownTrigger}}
+            {{#dropdown name="textDropDown"}}
+              <p>Quote</p>
+              <p>Paragraph</p>
+            {{/dropdown}}
+          </div>
+          <div class="toolbar--item">Size picker</div>
+          <div class="toolbar--item">Bg color picker</div>
+          <div class="toolbar--item"><i class="fa fa-font"></i></div>
+          <div class="toolbar--item">
+            <button class="button expanding-button">Done</button>
+          </div>
+        </div>
+      {{/if}}
+    </div>
   </div>
 </template>
