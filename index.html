@@ -3,13 +3,17 @@
 </head>
 
 <body>
+</body>
+
+<template name="applicationLayout">
   {{> navigation}}
   <main>
   {{# if currentUser}}
     <a href="/admin/assemblies/new">New Assembly</a>
   {{/if}}
+  {{> yield}}
   </main>
-</body>
+</template>
 
 <template name="newAssembly">
   <form id="new-assembly">
