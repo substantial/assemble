@@ -1,4 +1,5 @@
 .content-item
+  +clearfix
   margin-bottom: 3rem
 
   .big-text
@@ -12,6 +13,21 @@
   outline: none
   box-shadow: 0 0 0 1px $grey-75
 
-.save-button
-  margin: 1rem 0
+.content-item--bleed
+  background-color: #bdd1da
+  margin-left: -3rem
+  margin-right: -3rem
+  padding: 3rem
+
+.content-item--background-image
+  background-image: url('/img/west_coast_roadtrip/4.jpg')
+  background-repeat: no-repeat
+  background-position: center left
+  background-size: contain
+
+.content-item__body-text
+  width: 40%
   float: right
+
+  p
+    margin-bottom: 1.5rem

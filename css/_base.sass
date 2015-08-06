@@ -13,6 +13,16 @@ html
 html,
 body
   height: 100%
+  position: relative
+  &:before
+    content: ''
+    background: $blue-grey
+    height: 60vh
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    z-index: -1
 
 main
   padding: 3rem
