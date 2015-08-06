@@ -44,13 +44,19 @@
   </div>
 
   <div class="content" id="edit-assembly">
-    <div class="content-item">
+    <div class="content-item js-editable-content-container">
       <div class="content-item--editable-content {{textClass}}" contentEditable="true">
         Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.
       </div>
       {{#if contentItemFocused}}
-        <div>
-          <button class="button save-button">Save</button>
+        <div class="toolbar">
+          <div class="toolbar--item">Quote</div>
+          <div class="toolbar--item">Size picker</div>
+          <div class="toolbar--item">Backgroung color picker</div>
+          <div class="toolbar--item">Text color picker</div>
+          <div class="toolbar--item">
+            <button class="button save-button">Done</button>
+          </div>
         </div>
       {{/if}}
     </div>

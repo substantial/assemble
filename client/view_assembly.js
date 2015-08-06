@@ -3,13 +3,11 @@ Template.viewAssembly.created = function() {
 };
 
 Template.viewAssembly.events({
-  "focusout #edit-assembly": function (event) {
-  },
-  "focus #edit-assembly [contentEditable]": function (event) {
+  "focus #edit-assembly .js-editable-content-container": function (event) {
     $(event.currentTarget).toggleClass('content-item--editing');
     Session.set("isContentItemFocused", true);
   },
-  "focusout #edit-assembly [contentEditable]": function (event) {
+  "focusout #edit-assembly .js-editable-content-container": function (event) {
     $(event.currentTarget).toggleClass('content-item--editing');
     updateTextStyle(event);
   },
