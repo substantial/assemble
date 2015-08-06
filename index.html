@@ -75,12 +75,23 @@
     </div>
     {{#if contentItemFocused}}
       <div class="toolbar">
-        <div class="toolbar--item">Quote</div>
+        <div class="toolbar--item">
+          {{#dropdownTrigger name="textDropDown"}}
+            <button class="blank-button">
+              Text Type
+              <i class="fa fa-angle-down"></i>
+            </button>
+          {{/dropdownTrigger}}
+          {{#dropdown name="textDropDown"}}
+            <p>Quote</p>
+            <p>Paragraph</p>
+          {{/dropdown}}
+        </div>
         <div class="toolbar--item">Size picker</div>
-        <div class="toolbar--item">Backgroung color picker</div>
+        <div class="toolbar--item">Bg color picker</div>
         <div class="toolbar--item"><i class="fa fa-font"></i></div>
         <div class="toolbar--item">
-          <button class="button save-button">Done</button>
+          <button class="button expanding-button">Done</button>
         </div>
       </div>
     {{/if}}
