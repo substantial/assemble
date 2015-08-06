@@ -43,11 +43,13 @@
   </div>
 
   <div class="content" id="edit-assembly">
-    <div class="content-item" contentEditable="true">
-      Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.
+    <div class="content-item">
+      <div class="content-item--editable-content" contentEditable="true">
+        Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.
+      </div>
       {{#if contentItemFocused}}
         <div>
-          <button class="button">Save</button>
+          <button class="button save-button">Save</button>
         </div>
       {{/if}}
     </div>
