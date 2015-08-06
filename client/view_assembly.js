@@ -6,9 +6,11 @@ Template.viewAssembly.events({
   "focusout #edit-assembly": function (event) {
   },
   "focus #edit-assembly [contentEditable]": function (event) {
+    $(event.currentTarget).toggleClass('content-item--editing');
     Session.set("isContentItemFocused", true);
   },
   "focusout #edit-assembly [contentEditable]": function (event) {
+    $(event.currentTarget).toggleClass('content-item--editing');
     updateTextStyle(event);
   },
   "click .save-button": function (event) {
