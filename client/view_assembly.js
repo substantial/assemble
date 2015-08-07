@@ -23,10 +23,11 @@ Template.viewAssembly.helpers({
 });
 
 var updateTextStyle = function(event) {
-  var text = event.target.textContent;
+  var text = $('.content-item--editable-content').text();
+
+  console.log(text);
 
   $(event.currentTarget).toggleClass('content-item--editing');
-
   if(text.length > 200) {
     Session.set("textClass", "");
   }
