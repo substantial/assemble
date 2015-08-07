@@ -10,7 +10,7 @@ Template.viewAssembly.events({
   "focusout #edit-assembly .js-editable-content-container": function (event) {
     updateTextStyle(event);
   },
-  "click .save-button": function (event) {
+  "click .js-save-button": function (event) {
     updateTextStyle(event);
   }
 });
