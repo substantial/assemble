@@ -87,9 +87,38 @@
               <p>Paragraph</p>
             {{/dropdown}}
           </div>
-          <div class="toolbar--item">Size picker</div>
-          <div class="toolbar--item">Bg color picker</div>
-          <div class="toolbar--item"><i class="fa fa-font"></i></div>
+          <div class="toolbar--item">
+            <input id="text-small" name="textSize" type="radio" value="s" checked="checked" />
+            <label for="text-small">S</label>
+            <input id="text=medium" name="textSize" type="radio" value="m" />
+            <label for="text-medium">M</label>
+            <input id="text-large" name="textSize" type="radio" value="l" />
+            <label for="text-large">L</label>
+          </div>
+          <div class="toolbar--item">
+            {{#dropdownTrigger name="backgroundColorDropDown"}}
+              <div>
+                <i class="fa fa-circle" style=""></i> BG
+              </div>
+            {{/dropdownTrigger}}
+            {{#dropdown name="backgroundColorDropDown" classes="dropdown"}}
+              <p><i class="fa fa-circle" style="color: #cfd9dd"></i></p>
+              <p><i class="fa fa-circle" style="color: #dee6e9"></i></p>
+              <p><i class="fa fa-circle" style="color: #bdd1da"></i></p>
+            {{/dropdown}}
+          </div>
+          <div class="toolbar--item">
+            {{#dropdownTrigger name="fontColorDropDown"}}
+              <div>
+                <i class="fa fa-font"></i>
+                <i class="fa fa-angle-down"></i>
+              </div>
+            {{/dropdownTrigger}}
+            {{#dropdown name="fontColorDropDown" classes="dropdown"}}
+              <p><i class="fa fa-circle" style="color: #052c3e"></i></p>
+              <p><i class="fa fa-circle" style="color: #4e6772"></i></p>
+            {{/dropdown}}
+          </div>
           <div class="toolbar--item">
             <button class="button expanding-button">Done</button>
           </div>
