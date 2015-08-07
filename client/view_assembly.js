@@ -7,9 +7,6 @@ Template.viewAssembly.events({
     $(event.currentTarget).toggleClass('content-item--editing');
     Session.set("isContentItemFocused", true);
   },
-  "focusout #edit-assembly .js-editable-content-container": function (event) {
-    updateTextStyle(event);
-  },
   "click .js-save-button": function (event) {
     updateTextStyle(event);
   }
